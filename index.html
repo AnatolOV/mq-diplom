@@ -11,6 +11,7 @@
 <div class="boxpop-up">
 
     <div class="pop-up">
+        <button class="popup__close" type="button"></button>
         <h1 class="hpop-up">Ваш фидбек</h1>
         <form class="form">
             <div class="form-group">
@@ -46,9 +47,11 @@
 
 
             </div>
-        </form>
 
+        </form>
+        
     </div>
+
 </div>
 
 <body>
@@ -91,7 +94,7 @@
     <div class="top">
 
         <div class="chapter-top chapter-top__first">
-            
+
             <div class="border-top">
                 <ul class="activity-top">
                     <li class="activity">Lifestyle</li>
@@ -101,7 +104,7 @@
             </div>
         </div>
         <div class="chapter-top chapter-top__second">
-            <!--<img class="picture-top" src="images\trend2.jpg" alt="cheese">-->
+
             <div class="border-top">
                 <ul class="activity-top">
                     <li class="activity">Food</li>
@@ -110,7 +113,7 @@
             </div>
         </div>
         <div class="chapter-top chapter-top__third">
-            
+
             <div class="border-top">
                 <ul class="activity-top">
                     <li class="activity">Lifestyle</li>
@@ -317,48 +320,63 @@
     <div class="bottom">
 
         <div class="products-bottom">
-            <img class="products-image" src="images\shop-item-desk1.jpg" alt="pillows">
+            <picture class="course__preview">
+                <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images\shop-item-tablet1.jpg">
+                <source media="(max-width: 640px)" srcset="images\shop-item-mobile1.jpg">
+                <img class="products-image" src="images\shop-item-desk1.jpg" alt="pillows">
+            </picture>
+
             <div class="products-border">
-                <div class="name-products">Подушки на диван</div>
-                <div class="description-bottom">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
-                        class="refbottom">здесь</a></div>
+                <h3 class="name-products">Подушки на диван</h3>
+                <p class="description-bottom">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
+                        class="refbottom">здесь</a></p>
                 <div class="bottom-producs-block">
                     <div class="price">
                         <div class="old-price">1000р</div>
                         <div class="new-price">800р</div>
                     </div>
-                    <button class="products-button" type="button">В магазин</button>
+                    <a class="products-button" href="#">В магазин</a>
                 </div>
             </div>
         </div>
         <div class="products-bottom">
-            <img class="products-image" src="images\shop-item-desk2.jpg" alt="hare">
+            <picture class="course__preview">
+                <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images\shop-item-tablet2.jpg">
+                <source media="(max-width: 640px)" srcset="images\shop-item-mobile2.jpg">
+                <img class="products-image" src="images\shop-item-desk2.jpg" alt="hare">
+            </picture>
+
             <div class="products-border">
-                <div class="name-products">Кукла "Зайчик"</div>
-                <div class="description-bottom">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена
+                <h3 class="name-products">Кукла "Зайчик"</h3>
+                <p class="description-bottom">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена
                     <a href="#" class="refbottom">весенняя серия постов</a> в блоге и несколько подкастов
-                </div>
+                </p>
                 <div class="bottom-producs-block">
                     <div class="price">
                         <div class="old-price">3500р</div>
                     </div>
-                    <button class="products-button" type="button">В магазин</button>
+                    <a class="products-button" href="#">В магазин</a>
                 </div>
             </div>
         </div>
         <div class="products-bottom">
-            <img class="products-image" src="images\shop-item-desk3.jpg" alt="border">
+            <picture class="course__preview">
+                <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images\shop-item-tablet3.jpg">
+                <source media="(max-width: 640px)" srcset="images\shop-item-mobile3.jpg">
+                <img class="products-image" src="images\shop-item-desk3.jpg" alt="border">
+            </picture>
+
             <div class="products-border">
-                <div class="name-products">Шестиугольная рамка</div>
-                <div class="description-bottom">Необычная рамка для украшения дома из видео <a href="#"
-                        class="refbottom"> "Как сделать рамку из
-                        подручных средств за 30 минут"</a></div>
+                <h3 class="name-products">Шестиугольная рамка</h3>
+                <p class="description-bottom">Необычная рамка для украшения дома из видео <a href="#" class="refbottom">
+                        "Как сделать рамку из
+                        подручных средств за 30 минут"</a></p>
                 <div class="bottom-producs-block">
                     <div class="price">
                         <div class="old-price">500р</div>
                         <div class="new-price">400р</div>
                     </div>
-                    <button class="products-button" type="button">В магазин</button>
+                    <a class="products-button" href="#">В магазин</a>
                 </div>
             </div>
         </div>

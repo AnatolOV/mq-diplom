@@ -131,6 +131,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -154,14 +155,32 @@ body {
     z-index: -1;
 }
 
+.popup__close {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../svg/form-x.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -24px;
+    background-color: transparent;
+
+    cursor: pointer;
+    position: relative;
+    margin-left: calc(100% - 18px);
+    border: none;
+
+}
+
 .pop-up {
-    display: flex;
+
     width: 390px;
-    height: 587px;
+
     border: solid 2px black;
     flex-direction: column;
     background-color: white;
-    align-items: center;
+    padding-bottom: 51px;
 
 }
 
@@ -170,6 +189,8 @@ body {
     font-family: OpenSans-Bold;
     font-size: 20px;
     margin-bottom: 30px;
+    margin-top: 49px;
+    text-align: center;
 
 }
 
@@ -366,7 +387,6 @@ body {
 .chapter-top {
 
     width: 25%;
-    min-width: 414px;
     height: 318px;
     display: flex;
     align-items: flex-end;
@@ -443,15 +463,16 @@ body {
 }
 
 .border-top {
-    display: flex;
     flex-direction: column;
     border: solid #b59f5b 2px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0px;
     margin-bottom: 15px;
+    padding-top: 33px;
+    padding-right: 78px;
     padding-left: 36px;
-    width: 363px;
+    padding-bottom: 38px;
+    width: 100%;
 }
 
 .topic-top {
@@ -469,9 +490,7 @@ body {
 .activity-top {
     display: flex;
     padding-left: 0;
-    margin-top: 33px;
     margin-bottom: 0%;
-
 }
 
 
@@ -504,25 +523,33 @@ body {
 .products-bottom {
     width: 345px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .products-border {
     border: solid 3px #d3c59d;
     margin-top: -31px;
-    padding-top: 31px;
+    /*  padding-top: 31px;*/
     padding-left: 18px;
     padding-right: 22px;
     position: relative;
-    height: 202px;
     z-index: 1;
+    flex-grow: 1;
+    padding-bottom: 27px;
 
 
 }
 
+.course__preview {
+    display: flex;
+}
+
 .products-image {
     width: 300px;
-    margin-left: 24px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -538,8 +565,12 @@ body {
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
+    text-decoration: none;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .name-products {
@@ -547,7 +578,8 @@ body {
     text-transform: uppercase;
     font-family: OpenSans-Bold;
     color: #0f0d0e;
-
+    display: block;
+    margin-top: 47px;
 
 }
 
@@ -867,10 +899,14 @@ h2 {
     text-align: center;
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation:landscape) {
+@media (min-width: 641px) and (max-width: 1200px) {
     .top {
         width: 100%;
         flex-wrap: wrap;
+    }
+
+    .description {
+        margin-bottom: 20px;
     }
 
     .boxpop-up {
@@ -888,16 +924,23 @@ h2 {
 
     }
 
+    .chapter::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #eeeeee;
+    }
 
 
     .pop-up {
         width: 388px;
-        height: 595px;
+
     }
 
     .hpop-up {
         font-size: 18px;
         margin-bottom: 30px;
+
     }
 
     .hpop-up::after {
@@ -927,10 +970,12 @@ h2 {
     }
 
     .chapter-top {
-        width: calc(50% - 4px);
+        width: calc(25% - 4px);
         min-width: 244px;
         height: 244px;
     }
+
+
 
     .picture {
         width: 100%;
@@ -982,13 +1027,14 @@ h2 {
     .aside {
 
         margin-left: 33px;
-        width: 50%;
+        /* width: 50%;*/
 
     }
 
     .mainpage {
         margin-left: 0px;
-        width: 50%;
+        /*width: 50%;*/
+        flex: 1;
     }
 
     .block {
@@ -1076,9 +1122,9 @@ h2 {
 
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation:portrait) {
+@media (min-width: 641px) and (max-width: 1200px) and (orientation:landscape) {
     .chapter-top {
-        width: calc(25% - 4px);
+        width: calc(50% - 4px);
         min-width: 244px;
         height: 244px;
     }
@@ -1096,16 +1142,25 @@ h2 {
         align-items: center;
         position: fixed;
         z-index: 3;
-        visibility: hidden;
+       /* visibility: hidden;*/
         /*Pop up невидно*/
-        display: none;
+       /* display: none;*/
 
     }
+
+    .chapter::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #eeeeee;
+    }
+
+
 
     .pop-up {
         width: 330px;
         min-width: 330px;
-        height: 544px;
+        /* height: 544px;*/
         resize: none;
     }
 
@@ -1188,6 +1243,7 @@ h2 {
         min-width: 244px;
         height: 244px;
         margin-top: 2px;
+        margin-left: 0;
     }
 
     .chapter {
@@ -1201,7 +1257,8 @@ h2 {
     .description {
         width: 100%;
         font-size: 14px;
-        margin: 0;
+        margin: 0 0 23px 0;
+
     }
 
     .topic {
